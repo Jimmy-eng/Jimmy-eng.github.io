@@ -2,6 +2,7 @@ const menuButton = document.querySelector('[data-menu-button]');
 const navigation = document.querySelector('[data-nav]');
 const header = document.querySelector('[data-header]');
 const year = document.querySelector('[data-year]');
+const printButton = document.querySelector('[data-print]');
 
 const closeMenu = () => {
   if (!menuButton || !navigation) return;
@@ -37,6 +38,7 @@ updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
 
 if (year) year.textContent = String(new Date().getFullYear());
+if (printButton) printButton.addEventListener('click', () => window.print());
 
 const navLinks = Array.from(document.querySelectorAll('.site-nav a'));
 const sections = navLinks
