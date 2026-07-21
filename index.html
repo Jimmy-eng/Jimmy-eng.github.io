@@ -20,20 +20,33 @@
 
   <header class="site-header" data-header>
     <div class="nav-shell">
-      <a class="wordmark" href="#top" aria-label="Jyun-Ming Liao, home">
-        <span class="wordmark-mark" aria-hidden="true"></span>
-        <span>JML<span class="wordmark-dot">.</span></span>
-      </a>
+      <div class="nav-identity">
+        <a class="wordmark" href="#top" aria-label="Jyun-Ming Liao, home">
+          <span class="wordmark-mark" aria-hidden="true"></span>
+          <span>JML<span class="wordmark-dot">.</span></span>
+        </a>
+        <div class="nav-social" aria-label="Social profiles">
+          <a href="https://www.linkedin.com/in/%E4%BF%8A%E9%8A%98-%E5%BB%96-2400b7224/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.25H3.25V21H6.5V8.25ZM4.88 3A1.88 1.88 0 1 0 4.88 6.75 1.88 1.88 0 0 0 4.88 3ZM21 13.7c0-3.84-2.05-5.62-4.78-5.62-2.2 0-3.19 1.21-3.74 2.06V8.25H9.23V21h3.25v-6.31c0-1.66.31-3.27 2.37-3.27 2.02 0 2.05 1.9 2.05 3.38V21H21v-7.3Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Jimmy-eng" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82a9.5 9.5 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" clip-rule="evenodd"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
         <span class="sr-only">Toggle navigation</span>
         <span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
         <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
+        <a href="#expertise">Research</a>
         <a href="#experience">Experience</a>
-        <a href="#work">Work</a>
+        <a href="#work">Publications</a>
         <a href="#contact">Contact</a>
+        <button class="nav-print" type="button" data-print>CV</button>
       </nav>
     </div>
   </header>
@@ -43,9 +56,10 @@
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Senior imaging engineer · Taipei</p>
-          <h1 id="hero-title">Engineering better images,<br><span>from photons to production.</span></h1>
-          <p class="hero-intro">I build computational photography, computer vision, and validation systems that turn camera physics into measurable product improvements.</p>
+          <p class="eyebrow">Image quality · Computational photography · Computer vision</p>
+          <h1 id="hero-title">Jyun-Ming Liao</h1>
+          <p class="academic-title">Senior Camera Image Quality Engineer at MediaTek</p>
+          <p class="hero-intro">I am an imaging engineer and researcher working at the intersection of computational photography, computer vision, machine learning, and camera-system evaluation. My work focuses on translating imaging research into measurable improvements on production hardware.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">View selected work</a>
             <a class="button button-secondary" href="mailto:r07522818@ntu.edu.tw">Get in touch</a>
@@ -85,8 +99,8 @@
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="shell split-heading">
         <div>
-          <p class="section-index">01 / ABOUT</p>
-          <h2 id="about-title">I connect research rigor with product constraints.</h2>
+          <p class="section-index">ABOUT</p>
+          <h2 id="about-title">Research-minded engineering for real camera systems.</h2>
         </div>
         <div class="prose">
           <p>At MediaTek, I architect camera image-quality evaluation and automation systems spanning ISP pipelines, optics, sensor behavior, and large-scale performance validation.</p>
@@ -97,10 +111,10 @@
 
     <section class="section section-tinted" id="expertise" aria-labelledby="expertise-title">
       <div class="shell">
-        <p class="section-index">02 / EXPERTISE</p>
+        <p class="section-index">RESEARCH INTERESTS</p>
         <div class="section-heading-row">
-          <h2 id="expertise-title">Three layers of one imaging system.</h2>
-          <p>From signal formation to automated evidence.</p>
+          <h2 id="expertise-title">Research interests</h2>
+          <p>From image formation to perceptual evaluation.</p>
         </div>
         <div class="expertise-grid">
           <article class="expertise-card">
@@ -127,9 +141,9 @@
 
     <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="shell">
-        <p class="section-index">03 / EXPERIENCE</p>
+        <p class="section-index">EXPERIENCE</p>
         <div class="section-heading-row">
-          <h2 id="experience-title">Production work, measured by outcomes.</h2>
+          <h2 id="experience-title">Academic depth, production responsibility.</h2>
           <p>MediaTek · Camera Systems Team</p>
         </div>
         <article class="role">
@@ -158,10 +172,10 @@
 
     <section class="section section-dark" id="work" aria-labelledby="work-title">
       <div class="shell">
-        <p class="section-index section-index-dark">04 / SELECTED WORK</p>
+        <p class="section-index section-index-dark">PUBLICATIONS &amp; SELECTED WORK</p>
         <div class="section-heading-row dark-heading">
-          <h2 id="work-title">Research that survives contact with hardware.</h2>
-          <p>Selected systems and publications</p>
+          <h2 id="work-title">Publications and selected work</h2>
+          <p>Peer-reviewed research and engineering projects</p>
         </div>
         <div class="work-grid">
           <article class="project-card project-featured">
@@ -182,7 +196,7 @@
 
     <section class="section" aria-labelledby="education-title">
       <div class="shell">
-        <p class="section-index">05 / EDUCATION</p>
+        <p class="section-index">EDUCATION</p>
         <h2 id="education-title" class="compact-title">A foundation across control and electrical engineering.</h2>
         <div class="education-list">
           <article><p>2018 — 2020</p><div><h3>M.S. Mechanical Engineering</h3><span>National Taiwan University · System Control Group</span></div></article>
@@ -193,8 +207,8 @@
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-inner">
-        <p class="section-index section-index-dark">06 / CONTACT</p>
-        <h2 id="contact-title">Let’s make the image—and the system behind it—better.</h2>
+        <p class="section-index section-index-dark">CONTACT</p>
+        <h2 id="contact-title">Research, imaging systems, and collaboration.</h2>
         <p>Open to conversations about computational photography, camera systems, computer vision, and senior engineering opportunities.</p>
         <a class="button button-light" href="mailto:r07522818@ntu.edu.tw">r07522818@ntu.edu.tw</a>
       </div>
