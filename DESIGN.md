@@ -2,17 +2,17 @@
 
 ## 1. Purpose and visual concept
 
-The site presents Jyun-Ming Liao as a senior imaging engineer who connects camera physics, computer vision, machine learning, and production systems. The visual idea is **Optical Bench**: precise dark instrumentation in the hero, followed by bright editorial content that makes technical evidence easy to scan. A restrained aperture/grid motif may appear only as CSS geometry. No design, code, text, imagery, or branded assets are copied from the reference site.
+The site presents Jyun-Ming Liao as an engineer-researcher who connects camera physics, computer vision, machine learning, and production systems. The visual idea is **Academic Field Notes**: a white editorial canvas, narrow reading measure, restrained blue accent, typographic hierarchy, and thin rules. Research interests, publications, experience, and education lead the narrative. No design, code, text, imagery, measurements, or branded assets are copied from the reference site.
 
 ## 2. Color tokens
 
 | Token | Value | Use |
 |---|---:|---|
-| `--ink-950` | `#07111f` | Hero and footer |
-| `--ink-900` | `#0d1b2a` | Dark surfaces |
+| `--ink-950` | `#142033` | Primary text |
+| `--ink-900` | `#23344d` | Secondary headings |
 | `--ink-700` | `#314158` | Secondary dark text |
 | `--ink-500` | `#607087` | Muted text |
-| `--paper` | `#f7f9fc` | Page background |
+| `--paper` | `#fafbfc` | Page background |
 | `--surface` | `#ffffff` | Cards and content |
 | `--line` | `#dce4ee` | Borders and rules |
 | `--blue-600` | `#1769e0` | Links and primary action |
@@ -36,22 +36,21 @@ Text/background combinations must meet WCAG AA. Gradients are limited to the her
 - Content width: 1120px maximum, 24px desktop gutters, 20px tablet, 18px mobile.
 - Sections use 96px vertical spacing desktop, 72px tablet, 56px mobile.
 - Breakpoints: mobile `< 640px`, tablet `640–959px`, desktop `>= 960px`.
-- Hero: asymmetrical two-column layout on desktop; stacked on tablet/mobile.
-- Impact metrics: four-column desktop, two-column tablet, one-column mobile.
+- Hero: single editorial column with name, appointment, and concise research biography.
+- Navigation: LinkedIn and GitHub are grouped at the upper left; academic sections and printable CV are at the right.
 - Experience: two-column role metadata/content desktop; stacked mobile.
 - Selected work: two cards desktop, stacked mobile.
 
 ## 5. Components and information hierarchy
 
-1. Sticky navigation: wordmark, About, Expertise, Experience, Work, Contact, compact menu on mobile.
-2. Hero: role, concise positioning statement, contact/GitHub actions, optical diagnostic panel.
-3. Impact strip: 6+ years, 75% cycle reduction, 84% accuracy improvement, 97.5% cost reduction.
-4. Expertise: Imaging systems, Computer vision & ML, Systems & automation.
+1. Sticky navigation: wordmark plus LinkedIn/GitHub at left; About, Research, Experience, Publications, Contact, and CV at right.
+2. Hero: name, current appointment, concise research biography, and contact actions.
+3. Research interests: Imaging systems, Computer vision & ML, Systems & automation.
 5. Experience: MediaTek role and outcome-led work streams.
 6. Selected work: published research and intelligent delta robot.
 7. Education and contact CTA.
 
-Cards use 16px radius, one-pixel borders, and no decorative glass. Buttons have clear default, hover, active, and `:focus-visible` states. Icons are inline original SVG or simple CSS geometry only—never emoji. Company logos and profile photos are omitted. The public site omits the phone number; email, LinkedIn, GitHub, and publication URLs are allowed.
+Sections use typographic hierarchy and one-pixel rules before cards. Cards use small radii, no shadows, and no decorative glass. Buttons have clear default, hover, active, and `:focus-visible` states. Social icons are accessible inline SVGs—never emoji or icon fonts. Company logos and profile photos are omitted. The public site omits the phone number; email, LinkedIn, GitHub, and publication URLs are allowed.
 
 ## 6. Motion and interaction
 
