@@ -1,19 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jyun-Ming Liao — Imaging Systems Engineer</title>
-  <meta name="description" content="Portfolio of Jyun-Ming Liao, a senior imaging engineer building computational photography, computer vision, and camera validation systems.">
-  <meta name="theme-color" content="#245b9e">
+  <meta name="description" content="Portfolio of Jyun-Ming Liao, a senior imaging engineer building robot control, computer vision, and camera validation systems.">
+  <meta name="theme-color" content="#111821">
   <meta property="og:title" content="Jyun-Ming Liao — Imaging Systems Engineer">
-  <meta property="og:description" content="Computational photography, computer vision, and camera-system evaluation.">
+  <meta property="og:description" content="Robot control, computer vision, and camera-system evaluation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jimmy-eng.github.io/">
+  <meta property="og:image" content="https://jimmy-eng.github.io/portrait.jpg">
   <link rel="canonical" href="https://jimmy-eng.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260721b">
-  <script src="script.js?v=20260721b" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260722a">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        document.documentElement.setAttribute('data-theme', saved === 'light' ? 'light' : 'dark');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }());
+  </script>
+  <script src="script.js?v=20260722a" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,18 +47,29 @@
           </a>
         </div>
       </div>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
-        <span class="sr-only">Toggle navigation</span>
-        <span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#about">About</a>
-        <a href="#expertise">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#work">Publications</a>
-        <a href="#contact">Contact</a>
-        <button class="nav-print" type="button" data-print>CV</button>
-      </nav>
+      <div class="nav-actions">
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="#about">About</a>
+          <a href="#expertise">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#work">Publications</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-print" type="button" data-print>CV</button>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3a7 7 0 1 0 11.5 11.5Z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -55,14 +77,26 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Image quality · Computational photography · Computer vision</p>
+          <p class="eyebrow">Image quality · Robot control · Computer vision</p>
           <h1 id="hero-title">Jyun-Ming Liao</h1>
           <p class="academic-title">Senior Camera Image Quality Engineer at MediaTek</p>
-          <p class="hero-intro">I am an imaging engineer and researcher working at the intersection of computational photography, computer vision, machine learning, and camera-system evaluation. My work focuses on translating imaging research into measurable improvements on production hardware.</p>
+          <p class="hero-intro">I am an imaging engineer and researcher working at the intersection of robot control, computer vision, machine learning, and camera-system evaluation. My work focuses on translating imaging research into measurable improvements on production hardware.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">View selected work</a>
             <a class="button button-secondary" href="mailto:r07522818@ntu.edu.tw">Get in touch</a>
           </div>
+        </div>
+        <div class="portrait-wrap">
+          <figure class="portrait-frame">
+            <img
+              src="portrait.jpg"
+              alt="Portrait of Jyun-Ming Liao outdoors among trees"
+              width="828"
+              height="828"
+              decoding="async"
+              fetchpriority="high"
+            >
+          </figure>
         </div>
       </div>
     </section>
@@ -183,7 +217,7 @@
       <div class="shell contact-inner">
         <p class="section-index section-index-dark">CONTACT</p>
         <h2 id="contact-title">Research, imaging systems, and collaboration.</h2>
-        <p>Open to conversations about computational photography, camera systems, computer vision, and senior engineering opportunities.</p>
+        <p>Open to conversations about robot control, camera systems, computer vision, and senior engineering opportunities.</p>
         <a class="button button-light" href="mailto:r07522818@ntu.edu.tw">r07522818@ntu.edu.tw</a>
       </div>
     </section>
@@ -191,8 +225,7 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <p>© <span data-year></span> Jyun-Ming Liao</p>
-      <p>Designed and built independently in Taiwan.</p>
+      <p class="footer-copy">| © <span data-year></span> Jyun-Ming Liao All Rights Reserved |</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
